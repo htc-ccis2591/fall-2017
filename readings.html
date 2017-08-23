@@ -1,0 +1,15 @@
+---
+layout: page
+---
+
+<h1>Readings</h1>
+
+{% assign readings = site.readings %}
+{% for read in readings %}
+  {% include reading_panel.html reading=read %}
+
+{% else %}
+
+  <p>No readings for this course.</p>
+
+{% endfor %}

@@ -1,0 +1,166 @@
+---
+---
+
+$font-family-base:     "Open Sans", Arial, sans-serif;
+$headings-font-family: Tienne, Didot, Garamond, "Times New Roman", serif;
+
+@import "colors";
+
+$theme-color: ${{ site.theme_color }};
+$theme-color-dark: ${{ site.theme_color }}-dark;
+
+@import "base";
+@import "pygments";
+
+@import "custom-bootstrap-variables";
+@import "bootstrap";
+
+
+body {
+  padding-top: 50px;
+  color: $theme-text-color;
+  background-color: $theme_color;
+  background-image: linear-gradient( to bottom, lighten($theme-color, 42%), $theme-color);
+  background-repeat: no-repeat;
+}
+
+main {
+  padding: 35px 35px 60px 35px;
+  background-color: #FFFFFF;
+}
+
+blockquote {
+  margin-top: $line-height-computed * 0.75;
+}
+
+header {
+  margin-top: $line-height-computed * 2;
+}
+
+h2 {
+  margin-top: $line-height-computed * 2;
+}
+
+h3 {
+  margin-top: $line-height-computed * 1.5;
+}
+
+main h1 {
+  font-size: 2.25em;
+  margin: 1em;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#toc-page-content h1 {
+  font-size: 2.25em;
+  margin: 1em 0;
+  text-align: left;
+  vertical-align: middle;
+}
+
+footer {
+  width: 100%;
+  background-color: $theme-footer-bg-color;
+  color: $theme-footer-text-color;
+  border: 1px solid darken($theme-footer-bg-color, 10%);
+  padding: 15px;
+
+  a {
+    color: $theme-footer-text-color;
+    text-decoration: underline;
+  }
+
+  a:hover {
+    color: darken($theme-footer-text-color, 10%);
+    text-decoration: underline;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+.missing-portrait {
+  text-align: center;
+  color: $theme-color;
+  background-color: lighten($theme-color, 42%);
+}
+
+main a.block-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.tag {
+  margin: 0 .1em;
+}
+
+#toc {
+  width: inherit;
+  position: fixed;
+  padding: 0 10px;
+  margin-left: -15px;
+  font-size: 1.3em;
+}
+
+#toc-page-content {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.toc-anchor:target {
+  padding-top: 60px;
+  margin-top: -60px;
+}
+
+#toc ul {
+  margin: 0;
+  padding: 0;
+  color: $theme-color-dark;
+  list-style: none;
+  list-style-position: inside;
+}
+
+#toc li {
+  padding: 8px 0;
+}
+
+#toc .h1 {
+  margin-top: 10px;
+  font-size: 1.8em;
+  color: $theme-color-dark;
+  border-bottom: 1px solid $theme-color-dark;
+}
+
+#toc a {
+  color: $theme-color-dark;
+  text-decoration: none;
+
+  &:hover {
+    color: lighten($theme-link-color, 15%);
+  }
+}
+
+#toc .toc-l2 {
+  padding-left: 10px;
+  list-style-type: disc;
+}
+
+#toc .toc-l3 {
+  padding-left: 20px;
+  list-style-type: circle;
+}
+
+.toc-page.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+
+  background-color: lighten($theme-color, 42%);
+}
+
+.container-fluid main {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom:15px;
+}

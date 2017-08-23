@@ -1,0 +1,92 @@
+###############################################################################
+#
+# Welcome!
+#
+# Update the settings below and in the following _data files:
+# _data/course_outcomes.yml
+# _data/textbooks.yml
+# _data/instructors.yml
+# _data/student_instructors.yml
+###############################################################################
+
+# Site settings - affect how your site is published
+baseurl: "/course-web-template" # the subpath of your site, e.g. /blog
+url: "https://htc-ccis2591.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Color scheme based on http://flatuicolors.com/.
+# Possible values:
+#    - silver          - gold            - midnight
+#    - green           - turquoise       - blue
+#    - purple          - orange          - red
+theme_color: purple
+###############################################################################
+
+# Google Calendar Settings
+googleCalendarApiKey: 'AIzaSyBfRSj-878d-mwb0E1jIN0qVDzmQXJhuhQ'
+googleCollegeCalendarId: 'pam2qc7v8m3eqordq9llu4b844@group.calendar.google.com'
+googleCourseCalendarId: 'AIzaSyBck8JyFmlhjbTKlKH5TmajJtJUBO33JX8@group.calendar.google.com'
+###############################################################################
+
+# Google Analytics Tracking
+google_analytics_tracking_id: 'UA-63189236-4'
+
+# The information below should not need to be modified.
+###############################################################################
+# Build settings
+####################
+markdown: kramdown
+highlighter: rouge
+gems:
+  - jekyll-feed
+  - jekyll-gist
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+# Collections - settings to publish the _collection folder content
+####################
+collections:
+  modules:
+    output: true
+  outcomes:
+    output: true
+  readings:
+    output: true
+  experiences:
+    output: true
+  assessments:
+    output: true
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "modules"
+    values:
+      layout: module
+  -
+    scope:
+      path: ""
+      type: "outcomes"
+    values:
+      layout: outcome
+  -
+    scope:
+      path: ""
+      type: "readings"
+    values:
+      layout: reading
+      add_toc: true
+  -
+    scope:
+      path: ""
+      type: "experiences"
+    values:
+      layout: experience
+      add_toc: true
+  -
+    scope:
+      path: ""
+      type: "assessments"
+    values:
+      layout: assessment

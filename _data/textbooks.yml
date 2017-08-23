@@ -1,0 +1,10 @@
+-
+  sort-order: 1
+  title: Eloquent JavaScript
+  edition: 2nd
+  authors:
+    - Marijn Haverbeke
+#  isbn: 11111-22222
+  required: true
+  description: "The is the main textbook for the course."
+  note: "This book is available online: [Eloquent JavaScript 2nd Edition](http://eloquentjavascript.net/index.html)."

@@ -1,0 +1,16 @@
+#-
+#  sort-order: 2
+#  name: Student Instructor 1
+#  img_url: "https://avatars3.githubusercontent.com/u/5143491"
+#  notes: TA - section 1
+#  email: student-instructor1@univeristy.edu
+#  email_notes: Please make sure to include your course number & section in the subject.
+#  phone: 123-456-7788
+#  phone_notes: Please do not call between 10pm and 9am.
+#  office_location: Bldg 4, room 432
+#  office_hours:
+#    - Mon 1-3PM
+#    - Wed 3-5PM
+#  office_hours_notes: Office hours are open door time.  No appointment needed.
+#  description: >
+#    Some optional description about who this person is and their role in the course.

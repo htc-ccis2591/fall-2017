@@ -1,0 +1,48 @@
+-
+  sort-order: 1
+  id: build-js-web-apps
+  text: "Demonstrate the use of JavaScript, HTML and CSS to build web applications."
+-
+  sort-order: 2
+  id: js-lang-features
+  text: "Use core JavaScript language features including objects."
+-
+  sort-order: 3
+  id: jquery-dom
+  text: "Write code using jQuery for DOM traversal and manipulation."
+-
+  sort-order: 4
+  id: js-validation-regex
+  text: "Validate user input and data using regular expressions."
+-
+  sort-order: 5
+  id: ajax-json
+  text: "Process JSON data obtained using Ajax requests."
+-
+  sort-order: 6
+  id: ajax-json
+  text: "Detect browser versions and available features."
+-
+  sort-order: 7
+  id: browser-storage
+  text: "Read and write to local storage."
+-
+  sort-order: 8
+  id: js-style-best-practices
+  text: "Apply appropriate JavaScript coding style and best practices."
+-
+  sort-order: 9
+  id: ajax-json
+  text: "Demonstrate use of JavaScript debuggers and browser developer tools."
+-
+  sort-order: 10
+  id: js-libraries
+  text: "Demonstrate the use of relevant third party libraries."
+-
+  sort-order: 11
+  id: js-build-release
+  text: "Apply common application build and release processes."
+-
+  sort-order: 12
+  id: real-world-apps
+  text: "Develop real-world applications using available web APIs and public data."

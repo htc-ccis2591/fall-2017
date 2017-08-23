@@ -1,0 +1,16 @@
+-
+  sort-order: 1
+  name: Mary Mosman
+  img_url: "https://avatars3.githubusercontent.com/u/5143491"
+  email: mary.mosman@hennepintech.edu
+  email_note: Please include your course number & section in the subject line.
+#  phone: 123-456-7788
+#  phone_note: Please leave a message or send email if unavailable.
+  office_location: HPod Staff Area
+  office_hours:
+    - "Brooklyn Park: Mon 4:30 - 5:30 PM"
+    - "Eden Prairie:  Wed 4 - 5:30 PM"
+    - "Open Lab Time: Brooklyn Park H255, Fri 1-5 PM"
+  office_hours_note: Office hours are open door time.  No appointment needed.
+#  description: >
+#    Some optional description about who this instructor is or their role in the course.

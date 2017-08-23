@@ -1,0 +1,21 @@
+---
+layout: page
+---
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.min.js"></script>
+<script src="{{ "/assets/js/lib/patternomaly.min.js" | prepend:site.baseurl }}"></script>
+<div class="assessment">
+  <h1>{{ page.title }}</h1>
+  <div class="row">
+    <div class="col-md-7">{{ content }}</div>
+    <div class="col-md-5">
+    <canvas id="chart" class="center-block"</canvas>
+    <p class="text-center">
+    <label for="pattern-switch">
+      <input type="checkbox" id="pattern-switch">
+      Toggle Patterns
+    </label>
+    </p>
+    </div>
+  </div>
+</div>
