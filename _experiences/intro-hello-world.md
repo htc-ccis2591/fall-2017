@@ -57,13 +57,16 @@ After pasting in the above HTML, edit it as follows:
 5. Add a second `<script>` tag to run your script.js file. It is considered a best practice to put script tags that reference files at the end of the body.
 
 #### JS File
-Next, create your script.js file.  Add code to write "Hello World" to the DOM so that it shows up on the web page. 
+Next, create your script.js file.  Add code to write "Hello World" to the DOM so that it shows up on the web page.
 
 ### Test
 Run your page through Brackets Live Preview feature.  You should see Hello World in two places: 1) on the page itself, and 2) in the console.
 
 You'll need to open up the browser console to see the Hello World from the JS embedded in the HTML page. In Chrome, and most browsers, this is part of the Developer Tools.
 
+{% include img-medium.html url="/assets/images/intro-hello-world/view-browser-console.png"
+    alt="image showing how to open the Console in Chrome & view the console."
+%}
 
 ### Version the modified files
 Versioning the files requires using the `git add`, `git commit`, and `git push` commands.
