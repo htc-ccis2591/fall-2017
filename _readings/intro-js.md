@@ -33,13 +33,15 @@ JavaScript is not a strictly typed language. This means that you do not need to 
 
 Variables and types are covered in [Chapter 1 of Eloquent JavaScript](http://eloquentjavascript.net/01_values.html), but this information is a little outdated.  There is the old way to make variables using `var` and this has one set of JavaScript scoping rules & there is the new ES6 way which uses `let` and `const` and has different scoping rules.  
 
-The ES6 way is *much* friendlier and more intuitive for developers used to other languages. Read the information on ES6 in [Section 4.1 of Exploring ES6](http://exploringjs.com/es6/ch_core-features.html#sec_from-var-to-const).
+The ES6 way is *much* friendlier and more intuitive for developers used to other languages. Read the information on ES6 in [Section 4.1 of Exploring ES6](http://exploringjs.com/es6/ch_core-features.html#sec_from-var-to-const).  The newer syntax is also covered in *Learning JavaScript* in Chapter 3.
 
 I will expect you to understand both the old syntax and the new, as currently many programs existing will not be using the new ES6 syntax.  However I will expect you to write code using the ES6 syntax.
 
 ## Additional JS Syntax
-Basic programming structures are covered in [Chapter 2 of Eloquent JavaScript](http://eloquentjavascript.net/02_program_structure.html).
+Operators are also covered in [Chapter 1 of Eloquent JavaScript](http://eloquentjavascript.net/01_values.html), as well as in Chapter 5 of *Learning JavaScript*.
 
-Basic functions are covered in [Chapter 3 of Eloquent JavaScript](http://eloquentjavascript.net/03_functions.html).
+Basic programming structures are covered in [Chapter 2 of Eloquent JavaScript](http://eloquentjavascript.net/02_program_structure.html), as well as in Chapter 4 of *Learning JavaScript*.
 
-Basic objects and arrays are covered in [Chapter 4 of Eloquent JavaScript](http://eloquentjavascript.net/04_data.html). I will expect you to already have knowledge of arrays, but we will cover objects more in the next module.
+Basic functions are covered in [Chapter 3 of Eloquent JavaScript](http://eloquentjavascript.net/03_functions.html), as well as in Chapter 6 of *Learning JavaScript*.
+
+Basic objects and arrays are covered in [Chapter 4 of Eloquent JavaScript](http://eloquentjavascript.net/04_data.html), as well as in Chapter 3 of *Learning JavaScript*. I will expect you to already have knowledge of arrays, but we will cover objects more in the next module.
