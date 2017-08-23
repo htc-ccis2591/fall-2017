@@ -5,6 +5,7 @@
   authors:
     - Marijn Haverbeke
 #  isbn: 11111-22222
+  img_url: "assets/images/eloquentJavaScript.png"
   required: true
-  description: "The is the main textbook for the course."
+  description: "JavaScript lies at the heart of almost every modern web application, from social apps to the newest browser-based games. Though simple for beginners to pick up and play with, JavaScript is a flexible, complex language that you can use to build full-scale applications. Eloquent JavaScript, 2nd Edition dives deep into the JavaScript language to show you how to write beautiful, effective code."
   note: "This book is available online: [Eloquent JavaScript 2nd Edition](http://eloquentjavascript.net/index.html)."

@@ -7,13 +7,23 @@
       {%if textbook.required %}<span class="badge">Required</span>{% endif %}
     </div>
     <div class="panel-body">
-      {% for author in textbook.authors %}
-        {% if forloop.first %}Author: {% endif %}
-        {{ author }}{% unless forloop.last %}, {% endunless %}
-      {% endfor %}
-      {%if textbook.isbn %}<br>ISBN: {{ textbook.isbn }}{% endif %}
-      {%if textbook.description %}<br>{{ textbook.description }}{% endif %}
-      {%if textbook.note %}<br>{{ textbook.note }}{% endif %}
+        <div class="col-xs-5 col-sm-4 col-md-2">
+          {% if textbook.img_url %}
+          <img src="{{ textbook.img_url }}" class="img-responsive"
+               alt="Picture of {{ textbook.title }}.">
+          {% else %}
+          <div class="missing-portrait well"><i class="fa fa-book fa-5x" aria-hidden="true"></i></div>
+          {% endif %}
+        </div>
+        <div class="col-xs-12 col-sm-8 col-md-10">
+          <p>{% for author in textbook.authors %}
+            {% if forloop.first %}Author: {% endif %}
+            {{ author }}{% unless forloop.last %}, {% endunless %}
+          {% endfor %}</p>
+          {%if textbook.isbn %}<p>ISBN: {{ textbook.isbn }}</p>{% endif %}
+          {%if textbook.description %}<p>{{ textbook.description | markdownify }}</p>{% endif %}
+          {%if textbook.note %}<p>{{ textbook.note | markdownify }}</p>{% endif %}
+      </div>
     </div>
   </div>
 
