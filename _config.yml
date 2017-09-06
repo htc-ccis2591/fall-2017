@@ -11,7 +11,7 @@
 
 # Site settings - affect how your site is published
 baseurl: "/fall-2017" # Change this each semester
-url: "https://htc-ccis2591.github.io" 
+url: "https://htc-ccis2591.github.io"
 
 # Color scheme based on http://flatuicolors.com/.
 # Possible values:
@@ -22,7 +22,7 @@ theme_color: midnight
 ###############################################################################
 
 # Google Calendar Settings
-googleCalendarApiKey: 'AIzaSyBfRSj-878d-mwb0E1jIN0qVDzmQXJhuhQ'
+googleCalendarApiKey: 'AIzaSyBp2EuIzOmDJHiLpU3jWamZ_u5D_ZFw2KI'
 googleCollegeCalendarId: 'pam2qc7v8m3eqordq9llu4b844@group.calendar.google.com'
 googleCourseCalendarId: 'AIzaSyBck8JyFmlhjbTKlKH5TmajJtJUBO33JX8@group.calendar.google.com'
 ###############################################################################
