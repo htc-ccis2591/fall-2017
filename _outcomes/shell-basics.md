@@ -1,6 +1,6 @@
 ---
 title: Shell Basics
-course_outcome: outcome-scm
+course_outcome: js-build-release
 ---
 Use the command shell to:
 

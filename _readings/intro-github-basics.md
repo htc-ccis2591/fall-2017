@@ -7,7 +7,7 @@ labels:
 ---
 # {{ page.title }}
 This is an introduction to the Git & GitHub process you will use for your homework.  These steps and commands are also repeated in the follow-up experience
-[GitHub: HTML Hello World]({{ "/experiences/intro-hello-world.html" | prepend:site.baseurl }})
+[GitHub: JS Hello World]({{ "/experiences/intro-hello-world.html" | prepend:site.baseurl }})
 
 ## Prerequisites
 Make sure that you have completed the following prerequisites before beginning:

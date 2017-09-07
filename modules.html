@@ -25,6 +25,8 @@ layout: full-page
     </div>
   </a>
 </div>
+{% capture mod %}{{ forloop.index0 | modulo:3 }}{% endcapture %}
+{% if mod == '2' %}<div class="clearfix hidden-xs"></div>{% endif %}
 {% else %}
 
   <p>No modules configured for this course.</p>
