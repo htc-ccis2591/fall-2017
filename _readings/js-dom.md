@@ -41,7 +41,7 @@ These method return either elements or text/whitespace nodes:
 - lastChild()
 - nextSibling()
 - previousSibling()
-- childNodes()
+- childNodes
 
 When working with these methods, it is important to check the result type. You can check the property `nodeType` to see if the type is an element or text.  You can also use the `nodeValue` property to get or set the value. The value is dependent upon the `nodeType`. For a TextNode, the value will be the text content.  For an ElementNode, the value is a NodeList of the element's children.
 
@@ -52,7 +52,7 @@ Sometimes it is helpful to avoid the text and only work with elements. The follo
 - lastElementChild()
 - nextElementSibling()
 - previousElementSibling()
-- children()
+- children
 
 ### Working with Attributes
 When dealing with HTML elements from the DOM, it is often necessary to work with their attributes.  The following properties and methods allow us to get and set attribute values.

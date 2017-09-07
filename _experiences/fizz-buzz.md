@@ -208,7 +208,7 @@ Put this code either before or after the function definition.  It will work eith
 {% highlight JavaScript %}
 const button = document.getElementById("btn-count");
 button.addEventListener("click", function () {
-  
+
   const max = 30;
   fizzBuzzGame(max);
 });
@@ -228,6 +228,35 @@ button.addEventListener("click", function () {
   fizzBuzzGame(max);
 });
 {% endhighlight %}
+
+Notice however that if we click "Go!" a second time we double the output.  To clean this up, we need to delete what was previously there.
+
+To do this, we need to get our outputElement and then delete it's children.  Let's make another function to remove any elements children.  Let's start by defining the function with one input parameter, the element we want to remove the children from:
+{% highlight JavaScript %}
+function removeAllChildren(element) {
+
+}
+{% endhighlight %}
+
+Then we can get the elements child elements using the `children` property:
+{% highlight JavaScript %}
+const children = element.children;
+{% endhighlight %}
+
+Then set up a for loop to get each child and remove it using the `removeChild()` method:
+{% highlight JavaScript %}
+for (let i = 0; i < children.length; i++) {
+  let current = children[i];
+  element.removeChild(current);
+}
+{% endhighlight %}
+
+Now we can update our eventHandler method to get the output `div` and remove all of it's children before we call the fizzBuzzGame method to write (new) output:
+{% highlight JavaScript %}
+const outputElement = document.getElementById("output");
+removeAllChildren(outputElement);
+{% endhighlight %}
+
 
 ## Complete Solution
 You can view the entire solution on GitHub: [module2-code](https://github.com/htc-ccis2591/module2-code)
