@@ -51,8 +51,14 @@ First, create a folder for this web project and open the folder in Brackets.  Th
     <li>If more than one rule applies, output all replacement words on the same line.</li>
   </ul>
 
-  <h2>Output</h2>
-  <p>Improved code writes to a list below.</p>
+  <h2>Let's Do It</h2>
+  <p>Enter the number to count up to and then click "Go!"</p>
+  <form>
+    <label for="max">Max:</label>
+    <input id="max" type="number" min="1" max="250">
+    <input type="button" id="btn-count" value="Go!">
+  </form>
+
   <div id="output"></div>
 
   <script src="fizz-buzz.js"></script>
@@ -62,11 +68,17 @@ First, create a folder for this web project and open the folder in Brackets.  Th
 
 Next create the JavaScript file fizz-buzz.js, which is referenced in the above HTML.  Make sure that both the HTML and JavaScript files are saved in the web project folder.
 
+### First Iteration, Write to Console
 To begin our JavaScript code, lets set up a counter and a loop to simulate counting to our max number.  Since we want to be able to easily change the max number, we should make a variable to hold that value.
 
 {% highlight JavaScript %}
+const maxCount = 30
+{% endhighlight %}
+
+Then we need to setup the loop counter and a loop to do the counting:
+{% highlight JavaScript %}
 let count = 0
-while (count < 30) {
+while (count < maxCount) {
   count += 1;
 
 }
@@ -126,8 +138,9 @@ Now when be run the code we should see both rules work.  Numbers that are divisi
 
 We can make the message a little prettier by adding a space at the end of Fizz and Buzz to get "Fizz Buzz ".  The extra whitespaces are trimmed off by web browsers, which is handy.
 
-Now we have working Fizz Buzz code, but we also need to write our output to the web page.
+Now we have working Fizz Buzz code, but we still need to get our max number to count to from the form and then write our output to the web page.
 
+### Second Iteration, Write to Page
 Notice in the HTML we added a section for output with a `div` that has an `id`.
 {% highlight html %}
 <div id="output"></div>
@@ -174,6 +187,47 @@ listTarget.appendChild(item);
 {% endhighlight %}
 
 Now when we load the page, we should see the output written to the page instead of the console.
+
+### Third Iteration, Form Input
+For out last iteration of this code, we'll use the form input to get the max number to count up to and then start the code when the "Go!" button is clicked.
+
+First let's wrap all of our current code in a function that takes an input parameter for the max number to count up to:
+{% highlight JavaScript %}
+function fizzBuzzGame(maxCount) {
+
+  // All of the earlier code goes in here
+
+}
+{% endhighlight %}
+
+In our earlier code, we set the `maxCount = 30`.  We are now getting the maxCount as the input parameter to our function, so that line can be removed entirely from our previous code that we put in the loop.
+
+Now that we have a function, we need to call it in order for it to run.  Let's set-up a click-handler on the "Go!" button to call the function and pass in the value of 30 that we were using before.  This will let us test the function before we worry about getting the input from the form.
+
+Put this code either before or after the function definition.  It will work either place, so long as it is outside the fizzBuzzGame function we made above:
+{% highlight JavaScript %}
+const button = document.getElementById("btn-count");
+button.addEventListener("click", function () {
+  
+  const max = 30;
+  fizzBuzzGame(max);
+});
+{% endhighlight %}
+
+Notice that we got the button using it's id attribute value.  Then we added the click event handler to it.  Inside the event handler function, we are setting the max to 30, then using that variable as the input to the fizzBuzzGame function.
+
+Now when you test your page, no matter what you set the input value to, when you click "Go!" we will play Fizz Buzz counting to 30.
+
+Last step then is to get the actual max value from the form field and use that to call our function.
+
+Change the click handler to get the input control by id and then use it's `value` attribute to set the max:
+{% highlight JavaScript %}
+button.addEventListener("click", function () {
+  const maxInput = document.getElementById("max");
+  const max = maxInput.value;
+  fizzBuzzGame(max);
+});
+{% endhighlight %}
 
 ## Complete Solution
 You can view the entire solution on GitHub: [module2-code](https://github.com/htc-ccis2591/module2-code)
