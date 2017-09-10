@@ -39,6 +39,7 @@ highlighter: rouge
 gems:
   - jekyll-feed
   - jekyll-gist
+  - jemoji
 exclude:
   - Gemfile
   - Gemfile.lock

@@ -87,17 +87,4 @@ Once you have the plaintext alphabet and the correct ciphertext alphabets, you c
 
 
 ## Helpful Tips
-To get this code working correctly, you'll want to know if a letter is uppercase or lowercase. We learned that a string has a `toUpperCase()` method. We can obviously use this to change a letter (or String) to upperCase, but we can also use it to determine if the letter was upper case or not to begin with.
-
-{% highlight JavaScript %}
-let letter = "a";
-if (letter === letter.toUpperCase()) {
-  console.log("That was an upper case letter!");
-} else {
-  console.log("That was not an upper case letter!");
-}
-{% endhighlight %}
-
-If the letter was upper case, you want the translated letter to also be uppercase.  If not, you will need to use the String `toLowerCase()` method to change the letter to lower case before writing it to the output.  
-
-__Remember that you will need an uppercase letter when looking through the plaintext alphabet for a match.__
+If you need help getting started, try the helpful tips & hints found here: [Tips for Caesar Cipher]({{ "/experiences/caesar-cipher-tips.html" | prepend: site.baseurl }}).
