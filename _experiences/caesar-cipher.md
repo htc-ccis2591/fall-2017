@@ -33,7 +33,7 @@ In your program, rather than having the user specify a ciphertext alphabet direc
 So for example, if our key is 3, we will start with:  
 ciphertext alphabet:  ABCDEFGHIJKLMNOPQRSTUVWXYZ  
 
-Then move each letter to the left 3 positions:  
+Then move each letter to the right 3 positions:  
 ciphertext alphabet:  XYZABCDEFGHIJKLMNOPQRSTUVW  
 
 Note that the A is shifted to the right 3 letters, and the last 3 letters of the alphabet (XYZ) have moved to the beginning.
@@ -56,7 +56,9 @@ And they entered “Writing code is,!;~;;?5555 Cool”, we’d get “Gbsdsxq my
 ### HTML Page
 Create an HTML page with a simple form to accept input of a key (numeric 1-25) and a text message (of any length). There should be 3 buttons: Encrypt, Decrypt, & Reset. Also add some basic *instruction* text to the page so that anyone browsing to this page will know what it is for and how it works.
 
-Below the form, add a `div` element for the output. It will be helpful to add id attributes onto the div, buttons, and input controls to easily identify and access them from JavaScript.
+Below the form, add a spot for the output. You can use a `div` or another element you feel makes sense, such as a read only text area.
+
+It will be helpful to add id attributes onto the div, buttons, and input controls to easily identify and access them from JavaScript.
 
 ### Basic CSS
 Use CSS to make the form display nicely. If you want, you can use Bootstrap or another library to help with your display. If not, you will need to write some basic CSS yourself.
