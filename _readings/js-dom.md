@@ -66,7 +66,7 @@ Methods:
 
 - hasAttribute(attrName)
 - getAttribute(attrName) - returns attribute value
-- setAttribute(attrValue)
+- setAttribute(attrValue, value)
 - removeAttribute(attrName)
 
 ### Modifying the DOM

@@ -9,7 +9,7 @@ readings:
  - js-events
 experiences:
  - fizz-buzz
-# - grocery-list
+ - grocery-list-pt1
  - caesar-cipher
 tags:
  - objects

@@ -15,6 +15,13 @@ Make sure that you have completed the following prerequisites before beginning:
 - [JavaScript Document Object]({{ "/readings/js-dom.html" | prepend:site.baseurl }})
 - [JavaScript Events]({{ "/readings/js-events.html" | prepend:site.baseurl }})
 
+## Accept the assignment
+Click the link below, then on the web page, click the green button to accept the assignment.
+
+[Assignment: caesar-cipher]( https://classroom.github.com/a/nQsFaIkh )
+
+Note that once you accept this assignment, you will continue working with the same repository on GitHub for later parts of the assignment and will not need to accept the assignment again.
+
 
 ## Encrypting and Decrypting Text Using a Ciphertext Alphabet
 For the purposes of this assignment, we will call unencrypted text “plaintext”, and we will call encrypted text “ciphertext”.
@@ -83,7 +90,7 @@ Note: If you use a form input type of "reset" you do not need to write code to d
 #### Encrypt & decrypt
 Once you are getting your form data, you can work on the code to encrypt or decrypt the message.  To do the encryption or decryption, you will need to use arrays to create the "plaintext" and "ciphertext" alphabets as discussed above.  
 
-I reccommend that you begin by creating an array variable for the "plaintext" alphabet, as this should never change. (Be very careful setting this up, as missing a letter or swapping letters will cause incorrect translations!) Then write a function to generate the "ciphertext" alphabet by shifting the letters by the amount specified by the key.
+I recommend that you begin by creating an array variable for the "plaintext" alphabet, as this should never change. (Be very careful setting this up, as missing a letter or swapping letters will cause incorrect translations!) Then write a function to generate the "ciphertext" alphabet by shifting the letters by the amount specified by the key.
 
 Once you have the plaintext alphabet and the correct ciphertext alphabets, you can start going through the user's message character by character. Find the location of the letter in the plaintext alphabet array, then use the array index to get the appropriate letter from the ciphertext alphabet.
 
