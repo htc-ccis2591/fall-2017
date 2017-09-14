@@ -14,34 +14,25 @@ Make sure that you have completed the following prerequisites before beginning:
 - [Browser Storage]({{ "/readings/browser-storage.html" | prepend:site.baseurl }})
 
 ## Accept the assignment
-Click the link below, then on the web page, click the green button to accept the assignment.
+Continue working with the repository from the previous assignment.  You __DO NOT__ need to accept the assignment again.
 
-[Assignment: grocery-list]( https://classroom.github.com/a/TBvx_wrr )
-
-Note that once you accept this assignment, you will continue working with the same repository on GitHub for later parts of the assignment and will not need to accept the assignment again.
+[Grocery List: Part 1]( {{ "/experiences/grocery-list-pt1.html" | prepend:site.baseurl }} )
 
 ## Requirements
 Behavior:
 
-- Click on items to remove them from the list
-- Add Item button should:
-  - hide the button
-  - show the form
-- Form submit should:
-  - add a new item to the list
-  - then hide the form
-  - show the New Item button
+- Add a button to save all of the items in the to the local browser storage
+- When the page loads, it should check the local browser storage for saved items and add them to the list.
 
+To do this, you should go through all of the list items in the grocery list `ul`, pull out the text, and then stash it in an array. __Don't save the HTML elements.  Only save the text.__
 
-## Starter Files
-Before beginning, review the HTML & CSS files provided for you. Also note that there is an empty JavaScript file as well.  It is located in the `js` folder.  Note that the script tag that includes this file uses the folder name in the path.
-
-{% highlight html %}
-<script src="js/grocery-list.js"></script>
-{% endhighlight %}
-
-To show or hide elements, you can add or remove the `hide` style class from them. (Part of Bootstrap)
-
+Then use the `localStorage` methods:
+  - setItem()
+  - getItem()
+and the `JSON` methods:
+  - stringify()
+  - parse()
+to read and write the array from the browser local storage.
 
 
 ## Write good JavaScript code!
