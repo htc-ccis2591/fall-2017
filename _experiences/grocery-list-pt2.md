@@ -24,7 +24,9 @@ Behavior:
 - Add a button to save all of the items in the to the local browser storage
 - When the page loads, it should check the local browser storage for saved items and add them to the list.
 
-To do this, you should go through all of the list items in the grocery list `ul`, pull out the text, and then stash it in an array. __Don't save the HTML elements.  Only save the text.__
+To do this, you should go through all of the list items in the grocery list `ul`, pull out the text, and then stash it in an array. (What code structure would you need to go through all the items in a list?)
+
+__Don't save the HTML elements.  Only save the text.__  
 
 Then use the `localStorage` methods:
   - setItem()
