@@ -20,11 +20,11 @@ The JS file has JSON for the locations information to be presented on the page. 
 The Locations section will consist of a heading for each location followed by a list of the weekly hours and information on its staff members.  This data should be added to the “locations” section.  Before adding the headings for each location, remove the default text.
 
 The HTML for each location should be created as follows:
-
+<pre>
 HTML5 Article with class="location"
    H3 Heading for Location Name
    H4 Weekly Hours
-   List of hours data
+   Unordered List of hours data with list item for each day/time 
 
    H4 Staff Members
    Div with class="staff row" (One div for each staff member at that location)
@@ -32,14 +32,15 @@ HTML5 Article with class="location"
          H5 Staff Member Name
          Paragraph - Staff Member Text
       Div with class="col-sm-4"
-
-Staff Member Image with class="img-responsive", use "Picture of {staff member name}" as the alt text.
-
+         Staff Member Image with class="img-responsive" (for alt text, use "Picture of {staff member name}")
+</pre>
 
 ## Write good JavaScript code!
 
 - Use functions to break down the functionality into small tasks
-- Practice good coding standards with clear variable and function names, use $ for variables that will hold jQuery objects, use ES6 `let` and `const` instead of `var`
+- Practice good coding standards with clear variable and function names
+- Use ES6 `let` and `const` instead of `var`
+- Use ES6 template literals instead of string concatenation
 - Make sure your variables are well named.  Avoid abbreviations and use camelCase to make multi-word names readable.
 
 ## Final Testing

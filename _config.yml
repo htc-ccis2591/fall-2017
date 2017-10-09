@@ -34,7 +34,6 @@ google_analytics_tracking_id: 'UA-63189236-4'
 ###############################################################################
 # Build settings
 ####################
-markdown: kramdown
 highlighter: rouge
 gems:
   - jekyll-feed

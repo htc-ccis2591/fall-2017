@@ -25,13 +25,26 @@ The beverage item table should be first, followed by the bakery items, and the o
 The tables should be laid out as follows:
 
 H3 Heading (“Beverage”, “Bakery”, or “Other Products”)
-Item 1 name | Price | Image
-Item 2 name | Price | Sorry, no image.
-Item 3 name | Price | Image
+
+<table class="table table-bordered" style="width:60%">
+    <tr>
+        <th>Item</th><th>Price</th><th>Image</th>
+    </tr>
+    <tr>
+        <td>Item 1 name</td><td>Price</td><td>(image)</td>
+    </tr>
+    <tr>
+        <td>Item 2 name</td><td>Price</td><td>Sorry, no image.</td>
+    </tr>
+    <tr>
+        <td>Item 3 name</td><td>Price</td><td>(image)</td>
+    </tr>
+</table>
 
 Of there is an image file, add an appropriate HTML image tag with the src and alt text.  However, the image property may not be present in the JSON for some items. In this case, that table cell should contain italicized text saying “Sorry, no image.”
 
 Remember that you can make HTML tables as follows:
+```
 <table>
     <caption>Basic Table</caption>
     <tr>
@@ -44,12 +57,14 @@ Remember that you can make HTML tables as follows:
         <td>Row 3, Column 1</td><td>Row 3, Column 2</td><td>Row 3, Column 3</td>
     </tr>
 </table>
-
+```
 
 ## Write good JavaScript code!
 
 - Use functions to break down the functionality into small tasks
-- Practice good coding standards with clear variable and function names, use $ for variables that will hold jQuery objects, use ES6 `let` and `const` instead of `var`
+- Practice good coding standards with clear variable and function names
+- Use ES6 `let` and `const` instead of `var`
+- Use ES6 template literals instead of string concatenation
 - Make sure your variables are well named.  Avoid abbreviations and use camelCase to make multi-word names readable.
 
 ## Final Testing
