@@ -20,7 +20,7 @@
   text: "Process JSON data obtained using Ajax requests."
 -
   sort-order: 6
-  id: ajax-json
+  id: browser-features
   text: "Detect browser versions and available features."
 -
   sort-order: 7

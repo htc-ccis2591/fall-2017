@@ -4,7 +4,7 @@ summary: "Using JSON to build and work with JavaScript objects."
 ---
 
 # {{ page.title }}
-{{ page.summary }}.
+{{ page.summary }}
 
 ## What is JSON
 [Chapter 6 of Eloquent JavaScript](http://eloquentjavascript.net/06_object.html) introduced JSON as part of the discussion on Objects and Data. JSON is JavaScript Object Notation, and it is the syntax used to create a JavaScript Object.  
