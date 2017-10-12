@@ -96,4 +96,11 @@ HTML5 Article with class="location"
 ## Final Testing
 When you are done, push your files to GitHub, then make sure that your page displays and runs correctly on the GitHub website.  
 
+The site should look something like the following:
+
+{% include img-medium.html url="/assets/images/jquery/moonflowers-jq-menu.png"
+            alt="Image of completed page showing menu section." %}
+{% include img-medium.html url="/assets/images/jquery/moonflowers-jq-locations.png"  
+            alt="Image of completed page showing locations section." %}
+
 Don't forget the Pull Request.  Put a screenshot of the open request in the assignment dropbox.
